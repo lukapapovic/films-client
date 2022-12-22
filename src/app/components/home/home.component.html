@@ -1,0 +1,16 @@
+<p>Pocetna stranica</p>
+<ul>
+    <li *ngFor ='let c of contepts;let i  =index '>
+       {{i}}- {{c}}
+    </li>
+</ul>
+
+<p *ngIf="testValue>4">
+WE LOVE ANGULAR
+</p>
+
+<div [ngSwitch]="contepts.length">
+<p *ngSwitchCase="0">We have 0 Angular contepts</p>
+<p *ngSwitchCase="1">We have 1 Angular contepts</p>
+<p *ngSwitchDefault="many">We have many Angular contepts</p>
+</div>
